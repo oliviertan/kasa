@@ -1,0 +1,34 @@
+.collapse{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    width: 100%;
+    align-items: center;
+    .insidecollapse{
+        background-color:white;
+        color: black;
+        width: 90%;
+        p{
+            width: 100%;
+        }
+    }
+    .visible_collapse{
+        border-radius: 5px;
+        background-color: $main_color;
+        display: flex;
+        width: 100%;
+        height: 40px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 5px;
+        
+    } 
+    .fa-solid{
+        color: white;
+    }
+    h2{
+        margin-left: 8px;
+    }
+}

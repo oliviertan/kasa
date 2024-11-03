@@ -1,0 +1,20 @@
+body{
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .div_cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+            width: 90%;
+            background: rgb(236, 235, 235);
+            border-radius: 20px;
+            margin: 40px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+    }
+}

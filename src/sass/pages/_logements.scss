@@ -1,0 +1,40 @@
+.section_logement{
+    width: 90%;
+   .info{
+    justify-content: space-between;
+    .title_and_tags{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        h1{
+            color: $main_color;
+        }
+    }
+    .host_and_ratings{
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .host{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img{
+                border-radius: 30px;
+                width: 50px;
+                height: 50px;
+            }
+            h3{
+                margin-right: 10px;
+                color: $main_color;
+            }
+        }
+    }
+    .div_collapses{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+   }
+}

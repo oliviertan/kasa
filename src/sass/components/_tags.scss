@@ -1,0 +1,16 @@
+.tags_div{
+    display: flex;
+    flex-direction: row;
+    .tags{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: $main_color;
+        color: white;
+        width: fit-content;
+        height: 12px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+}

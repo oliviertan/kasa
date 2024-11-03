@@ -1,0 +1,56 @@
+.gallery{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+    height: 400px;
+    .displayImage{
+        width: 100%;
+        transition-duration: 0.5s;
+        transform-origin: right;
+    }
+    .displayNone{
+        width: 0.0001em;
+        transition-duration: 0.5s;
+    }
+    #gallery{
+        width: 100%;
+        height: 100%; 
+        img{
+            height: 100%; 
+        }
+    }
+    .arrow-left{
+        position: absolute;
+        left: 15px;
+    }
+    .arrow-right{
+        position: absolute;
+        right: 15px;
+    }
+    .dots {
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        .dot {
+            margin-inline: 5px;
+            width: 13px;
+            height: 13px;
+            background-color: #ffffff00;
+            border: 3px solid #fff;
+            border-radius: 100%;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .selectedDot {
+            margin-inline: 5px;
+            width: 13px;
+            height: 13px;
+            border: 3px solid #fff;
+            border-radius: 100%;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: #fff;
+        }
+    }
+}

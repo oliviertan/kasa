@@ -1,0 +1,13 @@
+.div-error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $main_color;
+    margin-bottom: 80px;
+    .error-number{
+        font-size: 100px;
+    }
+    .link{
+        color: black;
+    }
+}

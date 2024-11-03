@@ -1,0 +1,66 @@
+@media(max-width:850px){
+   .section_logement .div_collapses{
+    flex-direction: column;
+   }
+   .section_logement .div_collapses .collapse{
+    width: 100%;
+    }
+    .section_logement .info{
+        display: flex;
+        flex-direction: column;
+        .host_and_ratings{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+    header{
+        img{
+            width: 40%;
+        }
+
+    }
+    
+    .div_cards{
+        height: 960px;
+        article{
+            a{
+                .card{
+                    height:285px;
+                    img{
+                        height: 235px;
+                    }
+                }
+            }
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width:851px) {
+    .div_cards , .section_logement .div_collapses{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       }
+       .section_logement .div_collapses .collapse{
+        width: 40%;
+    }
+    .section_logement .info{
+        display: flex;
+        flex-direction: row;
+        .host_and_ratings{
+            display: flex;
+            flex-direction:column;
+        }
+    }
+    header{
+        img{
+            width: 15%;
+        }
+    }
+    .div_cards{
+        article{
+            width: 32%
+        }
+    }
+}
