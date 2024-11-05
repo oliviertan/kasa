@@ -26,7 +26,7 @@ function Logement(id){
                 </div>
                 <div className='div_collapses'>
                     <Collapse title={'Description'} text={logement.description}/>
-                    <Collapse title={'équipements'} text={logement.equipments}/>
+                    <Collapse title={'équipements'} equipements={logement.equipments}/>
                 </div>
             </div>
         </section>

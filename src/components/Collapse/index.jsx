@@ -1,6 +1,6 @@
 import React, { useState } from "react";
  
- function Collapse({title,text}) {
+ function Collapse({title,text,equipements}) {
     const [isopen, setIsOpen] = useState(false);
 
     const bouton=()=>setIsOpen(!isopen);
@@ -13,7 +13,7 @@ import React, { useState } from "react";
                 </div>
             </div>
             <div className="insidecollapse">
-                {isopen && <p>{text}</p>}
+                {isopen && (text!=null ? <p>{text}</p> :equipements.map((item)=> <p>{item}</p>))}
             </div>
         </div>
 
