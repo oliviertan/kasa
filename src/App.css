@@ -45,21 +45,20 @@ a {
   display: flex;
   margin: 20px;
   flex-direction: column;
-  height: 300px;
-  background-color: #FF6060;
   color: white;
   border-radius: 10px;
 }
 .card img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   width: 100%;
-  height: 250px;
+  object-fit: cover;
 }
-.card p {
+.card div {
   margin: 10px;
   height: 30px;
   width: 90%;
+  position: relative;
+  bottom: 80px;
 }
 
 .gallery {
@@ -86,6 +85,7 @@ a {
 }
 .gallery #gallery img {
   height: 100%;
+  object-fit: cover;
 }
 .gallery .arrow-left {
   position: absolute;
@@ -95,28 +95,13 @@ a {
   position: absolute;
   right: 15px;
 }
-.gallery .dots {
+.gallery .slidenmbr {
   position: absolute;
-  bottom: 40px;
+  bottom: 0px;
   display: flex;
 }
-.gallery .dots .dot {
-  margin-inline: 5px;
-  width: 13px;
-  height: 13px;
-  background-color: rgba(255, 255, 255, 0);
-  border: 3px solid #fff;
-  border-radius: 100%;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-.gallery .dots .selectedDot {
-  margin-inline: 5px;
-  width: 13px;
-  height: 13px;
-  border: 3px solid #fff;
-  border-radius: 100%;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #fff;
+.gallery .slidenmbr p {
+  color: white;
 }
 
 .banner {
@@ -242,9 +227,6 @@ header nav a {
   header img {
     width: 40%;
   }
-  .div_cards {
-    height: 960px;
-  }
   .div_cards article {
     width: 100%;
   }
@@ -252,7 +234,7 @@ header nav a {
     height: 285px;
   }
   .div_cards article a .card img {
-    height: 235px;
+    height: 285px;
   }
 }
 @media (min-width: 851px) {
@@ -277,6 +259,12 @@ header nav a {
   }
   .div_cards article {
     width: 32%;
+  }
+  .div_cards article .card {
+    height: 300px;
+  }
+  .div_cards article .card img {
+    height: 300px;
   }
 }
 body main {

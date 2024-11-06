@@ -10,7 +10,7 @@ const Card=({
         <Link to={`/logements/${id}`}>
             <div className='card'>
                 <img src={imageSrc} alt={title} className='cardimg'/>
-                <p className='card-title'>{title}</p>
+                <div><p className='card-title'>{title}</p></div>
             </div>
         </Link>
     </article>

@@ -18,7 +18,7 @@ function Accueil() {
 function DivCard() {
     return (
         <div className="div_cards">
-            {logementsliste.slice(0,6).map((logements, index) => (
+            {logementsliste.map((logements, index) => (
                 <Card
                     key={`${logements.name}-${index}`}
                     imageSrc={logements.cover}

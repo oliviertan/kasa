@@ -21,13 +21,12 @@
     }
     
     .div_cards{
-        height: 960px;
         article{
             a{
                 .card{
                     height:285px;
                     img{
-                        height: 235px;
+                        height: 285px;
                     }
                 }
             }
@@ -60,7 +59,13 @@
     }
     .div_cards{
         article{
-            width: 32%
+            width: 32%;
+            .card{
+                height: 300px;
+                img{
+                    height: 300px;
+                }
+            }
         }
     }
 }

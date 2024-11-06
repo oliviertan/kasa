@@ -26,10 +26,8 @@ function Gallery({Slides}) {
                     Slides.map((srcImage,index)=> <img src={srcImage} className={index==indexImage ? "displayImage":"displayNone"} key={index}/>)
                 }
             </div>
-            <div className="dots">
-                {
-                    Slides.map((_,index)=> <div id={index} className={index==indexImage ? "selectedDot":"dot"} onClick={()=>setImage(index)} key={index}></div>)
-                }
+            <div className="slidenmbr">
+                <p>{indexImage+1}/{length}</p>
 		    </div>
             <img src={arrow_left} onClick={leftSlide} className="arrow-left" alt="arrow-left" ></img>
             <img src={arrow_right}  onClick={rightSlide} className="arrow-right" alt="arrow-right"></img>
